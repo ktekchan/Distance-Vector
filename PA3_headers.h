@@ -24,8 +24,10 @@ struct router_info{
 /*To keep a record of the neighbors of the server.*/
 struct router_neighbor{
 	uint16_t ID,
-	int update_skip_count,   /*to keep a count of the number of times update has been missed*/
-	int flag_is_alive        /*to keep a track of the first time update was received*/
+   /*to keep a count of the number of times update has been missed*/
+	int update_skip_count,  
+   /*to keep a track of the first time update was received*/
+   int flag_is_alive 
 };
 
 /*To store the distance vector information*/
